@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #000000, #1a1a2e);
+    color: white;
+}
+
+
+/* Center layout */
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* Navbar */
+
+.nav-center {
+    text-align: center;
+    margin: 20px;
+}
+
+.nav-center a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Card */
+
+.card {
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Button */
+
+.btn {
+    background: red;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
