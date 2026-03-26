@@ -77,9 +77,10 @@ def search():
             "trailer": get_trailer(name)
         })
     return render_template('search.html', result=result)
-
+    
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
